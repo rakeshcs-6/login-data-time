@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>date time</title>
+    <style>
+        div{
+            padding-top: 20px;
+        }
+        body{
+            background-color: #32a894;
+        }
+    </style>
+</head>
+<center>
+<body>  
+    <h1 style="padding-top: 25px;"> Login Date Time</h1>
+    <script src=date.js> </script>
+    <script>
+        function display(){
+            var uname=document.getElementById("uname").value 
+            var pass=document.getElementById("pass").value
+            if( uname==""){
+                alert("please enter the user name")
+            }
+            else if(pass==""){
+                alert("please enter the password")
+            }
+            else{
+                document.getElementById("here1").innerHTML="welcome :-"+"  "+uname
+                var result=new1()
+            document.getElementById("here").innerHTML=result
+            }
+           
+        }
+    </script>
+    <div>
+    <label>username</label>
+    <input type="text" id="uname" style="font-family:monospace;"><br><br>
+    <label >password</label>
+    <input type="password" id="pass" style="font-family: monospace;"><br><br>
+    <input type="button" value="login" onclick=" display()"><br><br>
+    <p id="here1"></p>
+    <p id="here"></p>
+    </div>
+</body>
+</center>
+</html>
